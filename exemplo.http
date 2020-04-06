@@ -1,0 +1,33 @@
+http://localhost:3000/cursos
+
+
+####
+//Get de 1 curso em específico
+
+GET http://localhost:3000/cursos/1
+
+####
+//Adiciona campo
+
+POST http://localhost:3000/cursos HTTP/1.1
+content-type: application/json
+
+{
+    "nome": "Java"
+}
+
+####
+//Atualiza campo
+
+PUT http://localhost:3000/cursos/2 HTTP/1.1
+content-type: application/json
+
+{
+    "nome": "Java 00"
+}
+
+
+####
+//Deleta campo
+
+DELETE http://localhost:3000/cursos/2
